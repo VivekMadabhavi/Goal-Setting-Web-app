@@ -6,10 +6,10 @@ import './App.css';
 
 const App = () => {
   const [courseGoals,setCourseGoals] = useState([
-    { id: 'cg1', text: 'MongoDB' },
-    { id: 'cg2', text: 'Express.js' },
-    { id: 'cg3', text: 'React.js' },
-    { id: 'cg4', text: 'Node.js' },
+    { id: 'cg1', text: 'Clothes' },
+    { id: 'cg2', text: 'Appliances' },
+    { id: 'cg3', text: 'Shampoo' },
+    { id: 'cg4', text: 'Soap' },
   ]);
 
   const addNewGoalHandler = newGoal => {
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div className="course-goals">
-      <h1>Course Goals</h1>
+      <h1>Product List</h1>
       <NewGoal onAddGoal={addNewGoalHandler} />
       <GoalList goals={courseGoals} />
     </div>
